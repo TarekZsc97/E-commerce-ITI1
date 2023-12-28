@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Signup.css" />
+  </head>
+  <body>
+    <div class="loginContainer">
+      <div class="loginBox">
+        <h2>Sign Up</h2>
+        <form
+          class="loginForm"
+          onsubmit="return validateLogin()"
+          id="signupForm"
+        >
+          <label>Username</label>
+          <input type="text" id="username" placeholder="Username" required />
+
+          <label>Email</label>
+          <input type="email" id="email" placeholder="Email" required />
+          <p id="errorMessage1"></p>
+
+          <label>Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <p id="errorMessage2"></p>
+
+          <label>Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Enter Your Password"
+          />
+          <p id="errorMessage3"></p>
+
+          <select id="userType">
+            <option value="customer">Customer</option>
+            <option value="admin">Admin</option>
+          </select>
+
+          <input type="submit" value="Sign Up" class="loginButton" />
+          <div id="successMessage" class="success-message"></div>
+        </form>
+
+        <!-- Login Button -->
+        <label>if you have already account please press on signup</label>
+        <br />
+        <br />
+
+        <!-- <button class="loginButton"><a href="./login//login.html"></a>Login</button> -->
+      </div>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>

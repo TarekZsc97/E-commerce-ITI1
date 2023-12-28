@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <title>Update Product</title>
+  <link rel="stylesheet" href="update.css">
+</head>
+<body>
+  <div class="container-navbar">
+    <nav id="nav-bar" class="navbar navbar-expand-lg custom_nav-container" >
+       <a class="navbar-brand" href='#'><img id="logo-image" src="./../Resourses/logo (1).png"></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav ml-auto">
+           <li class="nav-item active">
+             <a class="nav-link" href="./../../index.html">HOME<span class="sr-only">(current)</span></a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">PRODUCTS</a>
+           </li>
+          
+           <li class="nav-item">
+             <a class="nav-link" href="#">BLOG</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="connect.html">CONNECT</a>
+           </li>
+           <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">PAGES <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Testimonial</a></li>
+               </ul>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#"><img id="cart-image" src="./../Resourses/cart.png"></a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#"><img id="wishList-image" src="./../Resourses/wish list.png"></a>
+             </li>
+         </ul>
+       </div>
+     </nav>
+   </div>
+  <div class="container">
+    <h2>Update Product</h2>
+    <form id="updateForm">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" required>
+
+      <label for="image">Image URL:</label>
+      <input type="text" id="image" name="image" required>
+
+      <button type="submit">Update Product</button>
+    </form>
+  </div>
+  <script src="update.js"></script>
+</body>
+</html>

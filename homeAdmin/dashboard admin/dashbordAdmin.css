@@ -1,0 +1,156 @@
+/* dashbordAdmin.css */
+:root {
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --blue: #17a2b8; /* A nice shade of blue for the update button */
+  --navColor: #f7444e; /* Main color in the navbar */
+}
+
+/* Navbar Styling */
+#logo-image {
+  width: 300px;
+  height: 100;
+  margin: 5px 25px 25px 40px;
+}
+#cart-image {
+  width: 20px;
+  height: 20px;
+}
+#wishList-image {
+  width: 25px;
+  height: 25px;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  padding: 5px 20px;
+  color: #131313;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+a:hover {
+  color: #f7444e !important;
+}
+
+/* Body and Container Styling */
+body {
+  background-color: #f8f9fa; /* Light grey background */
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+/* Heading Styling */
+h2 {
+  color: var(--navColor); /* Navbar color for the heading */
+  margin-bottom: 1rem;
+  text-align: start; /* Align to the start of the page */
+}
+
+/* Table Styling */
+.table {
+  margin-top: 1rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+thead th {
+  background-color: var(--navColor); /* Navbar color for table headers */
+  color: white;
+  border: none;
+  text-align: start;
+}
+tbody td {
+  border: none;
+  vertical-align: middle;
+  text-align: center;
+}
+tbody td.image-cell {
+  text-align: center;
+}
+img {
+  width: 100px;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+/* Action Buttons Styling */
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.actions button {
+  font-size: 0.9rem;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.actions button.update {
+  background-color: var(--blue);
+  color: white;
+}
+.actions button.update:hover {
+  background-color: #138496;
+}
+.actions button.delete {
+  background-color: var(--red);
+  color: white;
+}
+.actions button.delete:hover {
+  background-color: #c82333;
+}
+
+/* Create Product Button Styling */
+.create-product-btn {
+  background-color: var(--navColor); /* Navbar color for create button */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  margin: auto; /* Center the button */
+}
+.create-product-btn:hover {
+  background-color: #d63384; /* Slightly darker pink for hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .actions button {
+    margin: 5px 0;
+  }
+}
+
+.btn {
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.confirm {
+  background-color: green;
+  color: white;
+}
+
+.reject {
+  background-color: red;
+  color: white;
+}

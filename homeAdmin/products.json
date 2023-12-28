@@ -1,0 +1,116 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Trouser Firma",
+        "price": 10.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "https://baazarkolkata.com/old(12.08.2020)/wp-content/uploads/2019/08/bazar-kolkata-2nd-day1003.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "T-Shirt",
+        "price": 12.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "https://i.pinimg.com/564x/9d/54/b2/9d54b2230243429d23c310b1318f6503.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Black Suite",
+        "price": 12.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "https://img.mensxp.com/media/content/2020/Sep/Interesting-Facts-About-Mens-Fashion-740x500-5_5f5b31603d058.jpeg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Full Style",
+        "price": 22.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "https://images.lifestyleasia.com/wp-content/uploads/2019/12/12144154/GettyImages-1080910832.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "fridge",
+        "price": 88.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "https://i.pinimg.com/originals/30/80/8d/30808d56baf2ac2df2733ac81d94af7f.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Full Dress",
+        "price": 32.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "https://img.freepik.com/premium-photo/young-bearded-man-model-fashion-sitting-urban-step-wearing-casual-clothes_1139-1325.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Young Style",
+        "price": 45.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "https://johnlewis.scene7.com/is/image/johnlewis/Best-British-Menswear-Brands"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Casual",
+        "price": 33.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "https://www.realmenrealstyle.com/wp-content/uploads/2023/06/Tucked-In-Vs-Untucked-Shirts-For-Men.jpg"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

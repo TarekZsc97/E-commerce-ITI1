@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .cart-container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .cart-content {
+        margin-bottom: 20px;
+      }
+
+      .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .cart-item img {
+        max-width: 80px;
+        max-height: 80px;
+        margin-right: 10px;
+      }
+
+      .cart-footer {
+        text-align: right;
+      }
+
+      .cart-total {
+        font-weight: bold;
+      }
+
+      .clear-cart {
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .clear-cart:hover {
+        background-color: #c0392b;
+      }
+
+      .cart-header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        padding: 10px;
+        border-bottom: 2px solid #333;
+      }
+
+      .cart-column {
+        width: 20%;
+        text-align: center;
+      }
+
+      .cart-item-column {
+        width: 30%;
+        text-align: left;
+        display: flex;
+        align-items: center;
+      }
+
+      .quantity-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .quantity-button {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        margin: 0 5px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .quantity-button:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cart-container">
+      <h2>Your Cart</h2>
+
+      <div class="cart-content">
+        <div class="cart-header">
+          <div class="cart-column">Item</div>
+          <div class="cart-column">Price</div>
+          <div class="cart-column">Quantity</div>
+          <div class="cart-column">Total</div>
+        </div>
+
+        <div class="cart-item">
+          <div class="cart-item-column">
+            <img src="product1.jpg" alt="Product 1" /> Product 1
+          </div>
+          <div class="cart-column">$10.00</div>
+          <div class="cart-column">
+            <div class="quantity-buttons">
+              <button class="quantity-button" onclick="decreaseQuantity(this)">
+                -
+              </button>
+              <span class="quantity">2</span>
+              <button class="quantity-button" onclick="increaseQuantity(this)">
+                +
+              </button>
+            </div>
+          </div>
+          <div class="cart-column">$20.00</div>
+        </div>
+      </div>
+
+      <div class="cart-footer">
+        <h3>Your Total: $<span class="cart-total">0.00</span></h3>
+        <button class="clear-cart banner-btn" onclick="clearCart()">
+          Clear
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

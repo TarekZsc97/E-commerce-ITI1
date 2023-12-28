@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <title>Product List</title>
+    <link rel="stylesheet" href="./dashbordAdmin.css">
+</head>
+<body>
+    <div class="container-navbar">
+        <nav id="nav-bar" class="navbar navbar-expand-lg custom_nav-container" >
+           <a class="navbar-brand" href='#'><img id="logo-image" src="./Resourses/logo (1).png"></a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav ml-auto">
+               <li class="nav-item active">
+                 <a class="nav-link" href="./../index.html">HOME<span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="">PRODUCTS</a>
+               </li>
+              
+               <li class="nav-item">
+                 <a class="nav-link" href="#">BLOG</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="connect.html">CONNECT</a>
+               </li>
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">PAGES <span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Testimonial</a></li>
+                   </ul>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="#"><img id="cart-image" src="./Resourses/cart.png"></a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#"><img id="wishList-image" src="./Resourses/wish list.png"></a>
+                 </li>
+             </ul>
+           </div>
+         </nav>
+       </div>
+       <table id="orderTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Payment Method</th>
+          </tr>
+        </thead>
+        <tbody id="orderTableBody">
+          <!-- Order data will be inserted here -->
+        </tbody>
+      </table>
+      
+    <div class="container">
+        <h2>Product List</h2>
+        <div class="table-responsive">
+            <table id="productTable" class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th class="image-header">Image</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="productTableBody"></tbody>
+           </table>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <button onclick="redirectToCreateProduct()" class="create-product-btn">Create Product</button>
+    </div>
+
+    <script src="dashbordAdmin.js"></script>
+</body>
+</html>
